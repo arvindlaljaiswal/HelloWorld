@@ -138,13 +138,13 @@ public class HorzScrollWithListMenu extends Activity {
             this.btnSlide = btnSlide;
         }
 
-
+        @Override
         public void onGlobalLayout() {
             btnWidth = btnSlide.getMeasuredWidth();
             System.out.println("btnWidth=" + btnWidth);
         }
 
-
+        @Override
         public void getViewSize(int idx, int w, int h, int[] dims) {
             dims[0] = w;
             dims[1] = h;
